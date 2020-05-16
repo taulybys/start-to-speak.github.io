@@ -60,6 +60,12 @@ a {
 
 }
 
+.secondary-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
 /* HEADER */
 
 
@@ -164,8 +170,7 @@ ul {
 
 .section-item-2 h2{
     padding: 2.4em;
-    text-align: center;
-    font-size: 34px;
+
 }
 .section-item-2 form{
     grid-template-columns: repeat(4, 1fr);
@@ -186,8 +191,7 @@ input:focus {
 
 .section-item-3 h2{
     padding: 3em;
-    text-align: center;
-    font-size: 28px;
+
 }
 .course-item-1 {
     grid-area: ci1;
