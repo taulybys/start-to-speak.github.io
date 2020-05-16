@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    color: #2c3e50;
   }
 a {
     text-decoration: none;
@@ -36,8 +37,8 @@ a {
     width: 1440px;
     margin: 0 auto;
 }
-.width1130 {
-    width: 1130px;
+.width1140 {
+    width: 1140px;
     margin: 0 auto;
 }
 .b-black {
@@ -73,8 +74,8 @@ a {
     grid-template-columns: 0.7fr 2fr 2fr;
 }
 .logo img{
-    margin-top: 3em;
-    margin-left: 3em;
+    margin-top: 2em;
+    margin-left: 2em;
     width: 174px;
     height: 147px;
 }
@@ -178,7 +179,7 @@ ul {
     
 }
 input[type="number"] {
-    padding: 0.8em 2em;
+    padding: 0.8em 1em;
     border: 0;
     border-radius: 4px;
     background: #E2EAF2;
@@ -186,6 +187,23 @@ input[type="number"] {
 input:focus {
   outline: none;
 }
+.select {
+    background-color: #E2EAF2;
+    border-radius: 4px;
+    border: 0;
+    color: #2c3e50;
+    font-family: Montserrat;
+    padding: 0.8em 1em;
+}
+.select option {
+    background: #E2EAF2;
+}
+.select option:hover {
+    background: #7a98b6;
+    border-bottom: dashed 1px;
+    outline: dotted red;
+}
+
 
 /* ITEM-3 */
 
@@ -286,25 +304,188 @@ input:focus {
                          "c4 c5 c6" ;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-
 }
 .case-1 {
     grid-area: c1;
 }
+.case-1 img {
+    position: absolute;
+}
+.case-1 p {
+    position: relative;
+    opacity: 0;
+    font-size: 17,5px;
+    padding: 0 45px 0 45px;
+  font-weight: 700;
+  font-family: 'Segoe UI';
+  line-height: 400px;
+  text-align: center;
+  color: #2c3e50;
+  animation: fade .5s linear forwards;
+  z-index: 1;
+}
+.case-1 p:hover{
+    opacity:1;
+    background: rgb(255, 217, 1, 0.5); 
+    cursor: pointer;
+}
 .case-2 {
     grid-area: c2;
+}
+.case-2 img {
+    position: absolute;
+}
+.case-2 p {
+    position: relative;
+    opacity: 0;
+    font-size: 17,5px;
+    font-weight: 700;
+    font-family: 'Segoe UI';
+    padding: 0 40px 0 40px;
+    line-height: 400px;
+    text-align: center;
+    color: #2c3e50;
+    animation: fade .5s linear forwards;
+    z-index: 1;
+}
+.case-2 p:hover{
+    opacity:1;
+    background: rgb(255, 217, 1, 0.5); 
+    cursor: pointer;
 }
 .case-3 {
     grid-area: c3;
 }
+.case-3 img {
+    position: absolute;
+}
+.case-3 p {
+    position: relative;
+    opacity: 0;
+    font-size: 17,5px;
+    font-weight: 700;
+    padding-right: 85px;
+    padding-left: 85px;
+    font-family: 'Segoe UI';
+    line-height: 400px;
+    text-align: center;
+    color: #2c3e50;
+    animation: fade .5s linear forwards;
+    z-index: 1;
+}
+.case-3 p:hover{
+    opacity:1;
+    background: rgb(255, 217, 1, 0.5); 
+    cursor: pointer;
+}
 .case-4 {
     grid-area: c4;
+}
+.case-4 img {
+    position: absolute;
+}
+.case-4 p {
+    position: relative;
+    opacity: 0;
+    font-size: 17,5px;
+    font-weight: 700;
+    font-family: 'Segoe UI';
+    line-height: 400px;
+    text-align: center;
+    color: #2c3e50;
+    animation: fade .5s linear forwards;
+    z-index: 1;
+}
+.case-4 p:hover{
+    opacity:1;
+    background: rgb(255, 217, 1, 0.5); 
+    cursor: pointer;
 }
 .case-5 {
     grid-area: c5;
 }
+.case-5 img {
+    position: absolute;
+}
+.case-5 p {
+    position: relative;
+    opacity: 0;
+    font-size: 17,5px;
+    font-weight: 700;
+    font-family: 'Segoe UI';
+    line-height: 400px;
+    padding: 0 15px 0 15px;
+    text-align: center;
+    color: #2c3e50;
+    animation: fade .5s linear forwards;
+    z-index: 1;
+}
+.case-5 p:hover{
+    opacity:1;
+    background: rgb(255, 217, 1, 0.5); 
+    cursor: pointer;
+}
 .case-6{
     grid-area: c6;
 }
+.case-6 img {
+    position: absolute;
+}
+.case-6 p {
+    position: relative;
+    opacity: 0;
+    font-size: 17,5px;
+    font-weight: 700;
+    font-family: 'Segoe UI';
+    line-height: 400px;
+    padding: 0 50px 0 50px;
+    text-align: center;
+    color: #2c3e50;
+    animation: fade .5s linear forwards;
+    z-index: 1;
+}
+.case-6 p:hover{
+    opacity:1;
+    background: rgb(255, 217, 1, 0.5); 
+    cursor: pointer;
+}
 
 
+/*section-6*/
+
+
+.why-create {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2em;
+}
+.text-block {
+    line-height: 30px;
+}
+.text-block {
+    padding-bottom: 0.5em;
+}
+
+/* photo */
+
+.rounded-photo {
+position: absolute;
+width: 450px;
+height: 450px;
+right: 178px;
+top: 3670px;
+
+background: url(.png);
+background-blend-mode: normal;
+border-radius: 231.5px 0px;
+}
+.rectangle {
+position: absolute;
+width: 450px;
+height: 450px;
+right: 128px;
+top: 3713px;
+
+border: 1px solid #FFB200;
+box-sizing: border-box;
+border-radius: 231.5px 0px;
+}
