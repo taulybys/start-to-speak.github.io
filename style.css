@@ -266,3 +266,45 @@ input:focus {
     font-size: 22px;
 }
 
+/*section5*/
+
+.section-item-5 {
+    margin-top: 6em;
+}
+.section-item-5 h4{
+    margin-bottom: 2em;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+}
+.case-img {
+    width: 316px;
+    height: 360px;
+}
+.cases {
+    grid-template-areas: "c1 c2 c3"
+                         "c4 c5 c6" ;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+
+}
+.case-1 {
+    grid-area: c1;
+}
+.case-2 {
+    grid-area: c2;
+}
+.case-3 {
+    grid-area: c3;
+}
+.case-4 {
+    grid-area: c4;
+}
+.case-5 {
+    grid-area: c5;
+}
+.case-6{
+    grid-area: c6;
+}
+
+
