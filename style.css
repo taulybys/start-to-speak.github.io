@@ -68,13 +68,13 @@ a {
 .case {
     position: relative;
     opacity: 0;
-  font-weight: 700;
-  font-family: 'Segoe UI';
-  line-height: 400px;
-  text-align: center;
-  color: #2c3e50;
-  animation: fade .5s linear forwards;
-  z-index: 1;
+    font-weight: 700;
+    font-family: 'Segoe UI';
+    line-height: 400px;
+    text-align: center;
+    color: #2c3e50;
+    animation: fade .5s linear forwards;
+    z-index: 1;
 }
 
 /* HEADER */
@@ -150,7 +150,7 @@ ul {
 
 /* SECTION */
 
-/* ITEM-1 */
+/* SECITEM-1 */
  
 .section-item-1 {
     grid-template-columns: 0.8fr 1.2fr;
@@ -177,7 +177,7 @@ ul {
     margin-left: 4.4em;
 }
 
-/* ITEM-2 */
+/* SECITEM-2 */
 
 .section-item-2 h2{
     padding: 2.4em;
@@ -193,7 +193,7 @@ input[type="number"] {
     background: #E2EAF2;
 }
 input:focus {
-  outline: none;
+    outline: none;
 }
 .select {
     background-color: #E2EAF2;
@@ -213,7 +213,7 @@ input:focus {
 }
 
 
-/* ITEM-3 */
+/* SECITEM-3 */
 
 .section-item-3 h2{
     padding: 3em;
@@ -262,7 +262,7 @@ input:focus {
     font-weight: 600;
 }
 
-/* ITEM-4 */
+/* SECITEM-4 */
 
 .section-item-4 h5 {
     padding-top: 4em;
@@ -289,7 +289,7 @@ input:focus {
     font-size: 22px;
 }
 
-/*ITEM-5*/
+/*SECITEM-5*/
 
 .section-item-5 {
     margin-top: 6em;
@@ -334,7 +334,6 @@ input:focus {
 }
 .case-2 p {
     padding: 0 40px 0 40px;
-
 }
 .case-2 p:hover{
     opacity:1;
@@ -398,13 +397,12 @@ input:focus {
     cursor: pointer;
 }
 
-
-/*section-6*/
+/*SECITEM-6*/
 
 .max-width-container {
     max-width: 100%;
     height: 550px;
-    opacity: 0.5;
+    opacity: 0.8;
     background: #E2EAF2;
     position: relative;
     z-index: 1;
