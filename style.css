@@ -64,6 +64,10 @@ a {
     text-align: center;
     font-size: 30px;
     font-weight: 600;
+    padding: 2em;
+}
+.m0 {
+    margin: 0 auto;
 }
 
 /* HEADER */
@@ -101,6 +105,11 @@ ul {
 .top-menu-list a{
     color: #2C3E50;
 }
+.top-menu-list a:hover {
+    opacity:1;
+    color: #ff6600;
+    cursor: pointer;
+}
 .top-menu-list {
     grid-template-columns: repeat(4, auto);
     font-weight: 600;
@@ -135,7 +144,11 @@ ul {
     color: #89b2ff;
     font-weight: 500;
 }
-
+.top-contacts a:nth-child(4):hover {
+    opacity:1;
+    color: #ff6600;
+    cursor: pointer;
+}
 
 /* SECTION */
 
@@ -157,13 +170,17 @@ ul {
     font-size: 43px;
 }
 .section-item-1 h4 {
-    margin-bottom: 2.1em;
     margin-left: 3em;
     font-weight: 600;
     font-size: 28px;
 }
 .section-item-1 a {
     margin-left: 4.4em;
+}
+.section-item-1 a:hover {
+    opacity:1;
+    background: linear-gradient( #FFB200, #FFE600); 
+    cursor: pointer;
 }
 
 /* SECITEM-2 */
@@ -263,6 +280,12 @@ input:focus {
 .section-item-4 a:nth-child(3){
     margin-left: 6em;
 }
+.section-item-4 a:hover {
+    opacity:1;
+    background: #ffffff; 
+    color: #5c5c5c;
+    cursor: pointer;
+}
 .section-item-4  {
     margin: 0 auto;
     margin-top: 7em;
@@ -281,7 +304,7 @@ input:focus {
 /*SECITEM-5*/
 
 .section-item-5 {
-    margin-top: 6em;
+    margin-top: 4em;
 }
 .section-item-5 h4{
     margin-bottom: 2em;
@@ -402,6 +425,7 @@ input:focus {
 .max-width-container {
     max-width: 100%;
     height: 550px;
+    opacity: 1;
     background: #E2EAF2;
     position: relative;
     z-index: 1;
@@ -433,95 +457,126 @@ input:focus {
 /* photo */
 
 .rounded-photo {
-position: absolute;
-width: 450px;
-height: 450px;
-right: -10px;
-top: 10px;
-z-index: 200;
-background: url(.png);
-background-blend-mode: normal;
-border-radius: 231.5px 0px;
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    right: -10px;
+    top: 10px;
+    z-index: 200;
+    background: url(.png);
+    background-blend-mode: normal;
+    border-radius: 231.5px 0px;
 }
 .rectangle {
-position: absolute;
-width: 450px;
-height: 450px;
-right: -53px;
-top: 52px;
-z-index: 200;
-border: 1px solid #FFB200;
-box-sizing: border-box;
-border-radius: 231.5px 0px;
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    right: -53px;
+    top: 52px;
+    z-index: 200;
+    border: 1px solid #FFB200;
+    box-sizing: border-box;
+    border-radius: 231.5px 0px;
 }
 
 /*Тарифы*/
 
 .tarifes {
     margin-top: 5em;
-    grid-template-areas: "tar tar tar tar"
-                         "start pet pet intens" ;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2;
-    grid-gap: 30px;
+    grid-template-areas: "tar tar tar"
+                         "start pet intens" ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    align-items: center;
 }
 .tarifes h2 {
     grid-area: tar;
+}
+.tarifes h4 {
+    font-size: 18px;
+}
+.tarifes h3 {
+    font-size: 24px;
+}
+.tarifes p {
+    font-size: 36px;
+    font-weight: 600;
+}
+.tarifes a:last-child {
+    margin-top: 20px;
+    color: #2C3E50;
+}
+.tarifes a:last-child:hover {
+    opacity:1;
+    color: #ff6600;
+    cursor: pointer;
+}
+.tarifes a:nth-child(4):hover {
+    opacity:1;
+    background: linear-gradient( #FFB200, #FFE600); 
+    cursor: pointer;
 }
 .good-start {
     grid-area: start;
     width: 320px;
     height: 450px;
-    border: 1px solid #FFB200;
+    border: 3px solid #ffb200;
     text-align: center;
+    align-content: center;
+    grid-template-rows: 30px 50px 90px 90px 30px;
 }
 .teacher-pet {
     grid-area: pet;
     width: 420px;
     height: 499px;
-    border: 1px solid #FFB200;
+    border: 3px solid #ffb200;
     text-align: center;
+    align-content: center;
+    grid-template-rows: 40px 60px 100px 100px 40px;
 }
 .intensive {
     grid-area: intens;
     width: 320px;
     height: 450px;
-    border: 1px solid #FFB200;
+    border: 3px solid #ffb200;
     text-align: center;
+    align-content: center;
+    grid-template-rows: 30px 50px 90px 90px 30px;
+}
+.btn-yellow-tarifes {
+    font-size: 24px;
+    justify-self: center;
+    align-self: center;
+    padding: 7px 25px;
+    background: linear-gradient(#FFE600, #FFB200);
+    border-radius: 30px;
+    font-weight: 700;
+    color: #2C3E50;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* SECITEM-7 */
+.section-item-7 {
+    background-color: #2C3E50;
+    margin-top: 12em;
+}
+.result {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 210px;
+    padding-left: 5em;
+    color: #fffbfbc0;
+}
+.result h3 {
+    font-weight: 500;
+    font-size: 36px;
+    align-self: center;
+}
+.result h5 {
+    margin: 0 0;
+    font-weight: 250;
+    font-size: 18px;
+    align-self: flex-start;
+}
 
 
 
