@@ -304,6 +304,7 @@ input:focus {
                          "c4 c5 c6" ;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
+    margin-bottom: 30px;
 }
 .case-1 {
     grid-area: c1;
@@ -453,16 +454,36 @@ input:focus {
 
 /*section-6*/
 
-
+.max-width-container {
+    max-width: 100%;
+    height: 550px;
+    opacity: 0.5;
+    background: #E2EAF2;
+    position: relative;
+    z-index: 1;
+}
 .why-create {
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 2em;
+    margin-top: 6em;
+    margin: auto;
+    width: 1140px;
+    height: 500px;
+    position: relative;
 }
 .text-block {
     line-height: 30px;
 }
-.text-block {
+.text-block p {
     padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    color: #000;
+    font-weight: 400;
+    position: relative;
+    z-index: 200;
+}
+.text-block h3 {
+    font-size: 28px;
+    font-weight: 600;
 }
 
 /* photo */
@@ -471,9 +492,9 @@ input:focus {
 position: absolute;
 width: 450px;
 height: 450px;
-right: 178px;
-top: 3670px;
-
+right: -10px;
+top: 10px;
+z-index: 200;
 background: url(.png);
 background-blend-mode: normal;
 border-radius: 231.5px 0px;
@@ -482,10 +503,45 @@ border-radius: 231.5px 0px;
 position: absolute;
 width: 450px;
 height: 450px;
-right: 128px;
-top: 3713px;
-
+right: -53px;
+top: 52px;
+z-index: 200;
 border: 1px solid #FFB200;
 box-sizing: border-box;
 border-radius: 231.5px 0px;
+}
+
+/*Тарифы*/
+
+.tarifes {
+    margin-top: 5em;
+    grid-template-areas: "tar tar tar tar"
+                         "start pet pet intens" ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2;
+    grid-gap: 30px;
+}
+.tarifes h2 {
+    grid-area: tar;
+}
+.good-start {
+    grid-area: start;
+    width: 320px;
+    height: 450px;
+    border: 1px solid #FFB200;
+    text-align: center;
+}
+.teacher-pet {
+    grid-area: pet;
+    width: 420px;
+    height: 499px;
+    border: 1px solid #FFB200;
+    text-align: center;
+}
+.intensive {
+    grid-area: intens;
+    width: 320px;
+    height: 450px;
+    border: 1px solid #FFB200;
+    text-align: center;
 }
