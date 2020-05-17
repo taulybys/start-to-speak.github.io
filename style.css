@@ -171,12 +171,10 @@ ul {
 
 .section-item-2 h2{
     padding: 2.4em;
-
 }
 .section-item-2 form{
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1.5em;
-    
 }
 input[type="number"] {
     padding: 0.8em 1em;
@@ -209,7 +207,6 @@ input:focus {
 
 .section-item-3 h2{
     padding: 3em;
-
 }
 .course-item-1 {
     grid-area: ci1;
@@ -263,7 +260,6 @@ input:focus {
 }
 .section-item-4 a:nth-child(2) {
     margin-left: 2em;
-    
 }
 .section-item-4 a:nth-child(3){
     margin-left: 6em;
@@ -271,7 +267,6 @@ input:focus {
 .section-item-4  {
     margin: 0 auto;
     margin-top: 7em;
-    /* background: linear-gradient(#F7C105, #E9B200); */
     background: url("images/skype1.png") no-repeat;
     background-color: #E9B200;
 }
@@ -284,7 +279,7 @@ input:focus {
     font-size: 22px;
 }
 
-/*section5*/
+/*ITEM-5*/
 
 .section-item-5 {
     margin-top: 6em;
@@ -375,7 +370,7 @@ input:focus {
     z-index: 1;
 }
 .case-3 p:hover{
-    opacity:1;
+    opacity: 1;
     background: rgb(255, 217, 1, 0.5); 
     cursor: pointer;
 }
