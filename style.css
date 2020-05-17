@@ -82,17 +82,17 @@ a {
     width: 174px;
     height: 147px;
 }
-img.telegram {
-    margin-top: 2px;
+.telegram {
+    margin-top: 5px;
     margin-left: 0.4em;
-    width: 1.5em;
-    height: 1.5em;
+    width: 16px;
+    height: 16px;
 }
 .instagram {
     margin-left: 2em;
-    margin-top: 4px;
-    width: 1.2em;
-    height: 1.2em;
+    margin-top: 5px;
+    width: 16px;
+    height: 16px;
 }
 ul {
     padding-left: 0;
@@ -662,6 +662,52 @@ input:focus {
     color: #2C3E50;
     
 }
+
+/* FOOTER */
+.footer {
+    height: 300px;
+    background-color: #2C3E50;
+    color: #FFFFFF;
+}
+.footer a {
+    color: #ffffff;
+}
+.footer-content {
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 150px;
+}
+.footer-menu-list {
+    grid-template-columns: repeat(4, auto);
+    align-self: center;
+    justify-items: end;
+}
+.footer-contacts {
+    grid-template-columns: repeat(3, auto);
+    justify-self: center;
+    align-self: center;
+}
+.telegram-footer {
+    margin-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 18px;
+    height: 18px;
+}
+.instagram-footer {
+    margin-top: 10px;
+    width: 18px;
+    height: 18px;
+}
+.logo-footer {
+    justify-self: end;
+    align-self: center;
+}
+.logo-footer img {
+    width: 87px;
+    height: 74px;
+}
+
+
 
 
 
