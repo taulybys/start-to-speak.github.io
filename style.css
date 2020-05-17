@@ -578,20 +578,90 @@ input:focus {
     align-self: flex-start;
 }
 
+/* SECITEM-8 */
 
 
+.background {
+    background-color: #E2EAF2;
+}
+.review {
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: 310px;
+    grid-gap: 20px;
+}
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 180px;
+    box-sizing: border-box;
+    background-size: 150%;
+    background-position: center;
+}
+.back-img-item-1 {
+    background-image: url(images/keanu.jpg);
+}
+.back-img-item-2 {
+    background-image: url(images/neo.jpg);
+}
+.back-img-item-3 {
+    background-image: url(images/durov.jpg);
+}
+.back-img-item-4 {
+    background-image: url(images/zendaya.jpg);
+}
+.r-i-col {
+    grid-template-columns: auto 140px;
+    grid-template-rows: 140px auto;
+    justify-items: center;
+    align-items: center;
+}
+.review h6 {
+    font-size: 14px;
+    line-height: 16px;
+}
+.review p {
+    font-weight: 500;
+    grid-template-rows: 1fr;
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 3em;
+    justify-self: start;
+    align-self: start;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+/* SECITEM-9 */
+.section-item-9 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 800px;
+    padding: 10em;
+}
+.section-item-9 h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.section-item-9 h4 {
+    font-size: 22px;
+    font-weight: 400;
+}
+.section-item-9 a:hover { 
+    opacity: 1;
+    background: linear-gradient( #FFB200, #FFE600); 
+    cursor: pointer;
+}
+.section-item-9 a {
+    font-size: 20px;
+    justify-self: center;
+    align-self: center;
+    align-content: flex-start;
+    padding: 14px 25px;
+    background: linear-gradient(#FFE600, #FFB200);
+    border-radius: 30px;
+    font-weight: 700;
+    color: #2C3E50;
+    
+}
 
 
 
