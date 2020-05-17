@@ -494,3 +494,87 @@ border-radius: 231.5px 0px;
     border: 1px solid #FFB200;
     text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*new page course*/
+
+.podbor-course-1 {
+    margin-top: 20px;
+    grid-template-areas: "course-h2 course-h2 course-h2 course-h2"
+                         "course-text course-text course-text course-image"
+                         "btn1 btn2 . course-image"
+                         ". . . course-image";
+    grid-gap: 25px;
+
+}
+.podbor-course-1 h2 {
+    grid-area: course-h2;
+}
+.podbor-course-1 p {
+    grid-area: course-text;
+    line-height: 30px;
+}
+.podbor-course-1 img {
+    grid-area: course-image;
+    width: 424px;
+    height: 412px;
+}
+.btn-on {
+
+    grid-area: btn1;
+}
+.btn-skype {
+    grid-area: btn2;
+}
