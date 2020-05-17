@@ -66,7 +66,9 @@ a {
     font-weight: 600;
     padding: 2em;
 }
-
+.m0 {
+    margin: 0 auto;
+}
 
 /* HEADER */
 
@@ -455,26 +457,26 @@ input:focus {
 /* photo */
 
 .rounded-photo {
-position: absolute;
-width: 450px;
-height: 450px;
-right: -10px;
-top: 10px;
-z-index: 200;
-background: url(.png);
-background-blend-mode: normal;
-border-radius: 231.5px 0px;
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    right: -10px;
+    top: 10px;
+    z-index: 200;
+    background: url(.png);
+    background-blend-mode: normal;
+    border-radius: 231.5px 0px;
 }
 .rectangle {
-position: absolute;
-width: 450px;
-height: 450px;
-right: -53px;
-top: 52px;
-z-index: 200;
-border: 1px solid #FFB200;
-box-sizing: border-box;
-border-radius: 231.5px 0px;
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    right: -53px;
+    top: 52px;
+    z-index: 200;
+    border: 1px solid #FFB200;
+    box-sizing: border-box;
+    border-radius: 231.5px 0px;
 }
 
 /*Тарифы*/
@@ -552,8 +554,29 @@ border-radius: 231.5px 0px;
     color: #2C3E50;
 }
 
-
-
+/* SECITEM-7 */
+.section-item-7 {
+    background-color: #2C3E50;
+    margin-top: 12em;
+}
+.result {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 210px;
+    padding-left: 5em;
+    color: #fffbfbc0;
+}
+.result h3 {
+    font-weight: 500;
+    font-size: 36px;
+    align-self: center;
+}
+.result h5 {
+    margin: 0 0;
+    font-weight: 250;
+    font-size: 18px;
+    align-self: flex-start;
+}
 
 
 
