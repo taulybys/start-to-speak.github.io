@@ -402,7 +402,6 @@ input:focus {
 .max-width-container {
     max-width: 100%;
     height: 550px;
-    opacity: 1;
     background: #E2EAF2;
     position: relative;
     z-index: 1;
