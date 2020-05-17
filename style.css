@@ -66,6 +66,7 @@ a {
     font-weight: 600;
 }
 
+
 /* HEADER */
 
 
@@ -460,33 +461,74 @@ border-radius: 231.5px 0px;
 
 .tarifes {
     margin-top: 5em;
-    grid-template-areas: "tar tar tar tar"
-                         "start pet pet intens" ;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2;
-    grid-gap: 30px;
+    grid-template-areas: "tar tar tar"
+                         "start pet intens" ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    align-items: center;
 }
 .tarifes h2 {
     grid-area: tar;
 }
+.tarifes h4 {
+    font-size: 18px;
+}
+.tarifes h3 {
+    font-size: 24px;
+}
+.tarifes p {
+    font-size: 36px;
+    font-weight: 600;
+}
+.tarifes a:last-child {
+    margin-top: 20px;
+    color: #2C3E50;
+}
+.tarifes a:last-child:hover {
+    opacity:1;
+    color: #ff6600;
+    cursor: pointer;
+}
+.tarifes a:nth-child(4):hover {
+    opacity:1;
+    background: linear-gradient( #FFB200, #FFE600); 
+    cursor: pointer;
+}
+
 .good-start {
     grid-area: start;
     width: 320px;
     height: 450px;
-    border: 1px solid #FFB200;
+    border: 3px solid #FFB200;
     text-align: center;
+    align-content: center;
+    grid-template-rows: 30px 50px 90px 90px 30px;
 }
 .teacher-pet {
     grid-area: pet;
     width: 420px;
     height: 499px;
-    border: 1px solid #FFB200;
+    border: 3px solid #FFB200;
     text-align: center;
+    align-content: center;
+    grid-template-rows: 40px 60px 100px 100px 40px;
 }
 .intensive {
     grid-area: intens;
     width: 320px;
     height: 450px;
-    border: 1px solid #FFB200;
+    border: 3px solid #FFB200;
     text-align: center;
+    align-content: center;
+    grid-template-rows: 30px 50px 90px 90px 30px;
+}
+.btn-yellow-tarifes {
+    font-size: 24px;
+    justify-self: center;
+    align-self: center;
+    padding: 7px 25px;
+    background: linear-gradient(#FFE600, #FFB200);
+    border-radius: 30px;
+    font-weight: 700;
+    color: #2C3E50;
 }
