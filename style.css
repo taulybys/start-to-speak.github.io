@@ -254,6 +254,10 @@ input:focus {
     font-size: 20px;
     color: #7C98B5;
 }
+.course a:hover {
+    opacity: 1;
+    color: #ff6600;
+}
 .course h4 {
     margin: 0;
     margin-bottom: 1em;
