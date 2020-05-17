@@ -60,11 +60,21 @@ a {
     border-radius: 135px 0 135px 0;
 
 }
-
 .secondary-title {
     text-align: center;
     font-size: 30px;
     font-weight: 600;
+}
+.case {
+    position: relative;
+    opacity: 0;
+  font-weight: 700;
+  font-family: 'Segoe UI';
+  line-height: 400px;
+  text-align: center;
+  color: #2c3e50;
+  animation: fade .5s linear forwards;
+  z-index: 1;
 }
 
 /* HEADER */
@@ -308,17 +318,8 @@ input:focus {
     position: absolute;
 }
 .case-1 p {
-    position: relative;
-    opacity: 0;
-    font-size: 17,5px;
     padding: 0 45px 0 45px;
-  font-weight: 700;
-  font-family: 'Segoe UI';
-  line-height: 400px;
-  text-align: center;
-  color: #2c3e50;
-  animation: fade .5s linear forwards;
-  z-index: 1;
+
 }
 .case-1 p:hover{
     opacity:1;
@@ -332,17 +333,8 @@ input:focus {
     position: absolute;
 }
 .case-2 p {
-    position: relative;
-    opacity: 0;
-    font-size: 17,5px;
-    font-weight: 700;
-    font-family: 'Segoe UI';
     padding: 0 40px 0 40px;
-    line-height: 400px;
-    text-align: center;
-    color: #2c3e50;
-    animation: fade .5s linear forwards;
-    z-index: 1;
+
 }
 .case-2 p:hover{
     opacity:1;
@@ -356,18 +348,8 @@ input:focus {
     position: absolute;
 }
 .case-3 p {
-    position: relative;
-    opacity: 0;
-    font-size: 17,5px;
-    font-weight: 700;
     padding-right: 85px;
     padding-left: 85px;
-    font-family: 'Segoe UI';
-    line-height: 400px;
-    text-align: center;
-    color: #2c3e50;
-    animation: fade .5s linear forwards;
-    z-index: 1;
 }
 .case-3 p:hover{
     opacity: 1;
@@ -379,18 +361,6 @@ input:focus {
 }
 .case-4 img {
     position: absolute;
-}
-.case-4 p {
-    position: relative;
-    opacity: 0;
-    font-size: 17,5px;
-    font-weight: 700;
-    font-family: 'Segoe UI';
-    line-height: 400px;
-    text-align: center;
-    color: #2c3e50;
-    animation: fade .5s linear forwards;
-    z-index: 1;
 }
 .case-4 p:hover{
     opacity:1;
@@ -404,17 +374,8 @@ input:focus {
     position: absolute;
 }
 .case-5 p {
-    position: relative;
-    opacity: 0;
-    font-size: 17,5px;
-    font-weight: 700;
-    font-family: 'Segoe UI';
-    line-height: 400px;
     padding: 0 15px 0 15px;
-    text-align: center;
-    color: #2c3e50;
-    animation: fade .5s linear forwards;
-    z-index: 1;
+
 }
 .case-5 p:hover{
     opacity:1;
@@ -428,17 +389,8 @@ input:focus {
     position: absolute;
 }
 .case-6 p {
-    position: relative;
-    opacity: 0;
-    font-size: 17,5px;
-    font-weight: 700;
-    font-family: 'Segoe UI';
-    line-height: 400px;
     padding: 0 50px 0 50px;
-    text-align: center;
-    color: #2c3e50;
-    animation: fade .5s linear forwards;
-    z-index: 1;
+
 }
 .case-6 p:hover{
     opacity:1;
