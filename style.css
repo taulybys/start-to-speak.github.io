@@ -68,29 +68,26 @@ a {
 }
 .m0 {
     margin: 0 auto;
+    padding: 0;
 }
 
 /* HEADER */
 
-
+.header {
+    margin-top: 4em;
+}
 .top-content {
-    grid-template-columns: 0.7fr 2fr 2fr;
+    grid-template-columns: 15% 36% 49%;
 }
 .logo img{
-    margin-top: 2em;
-    margin-left: 2em;
     width: 174px;
     height: 147px;
 }
 .telegram {
-    margin-top: 5px;
-    margin-left: 0.4em;
     width: 16px;
     height: 16px;
 }
 .instagram {
-    margin-left: 2em;
-    margin-top: 5px;
     width: 16px;
     height: 16px;
 }
@@ -98,8 +95,6 @@ ul {
     padding-left: 0;
 }
 .top-menu {
-    margin-top: 2em;
-    align-self: flex-start;
     font-size: 18px;
 }
 .top-menu-list a{
@@ -113,36 +108,22 @@ ul {
 .top-menu-list {
     grid-template-columns: repeat(4, auto);
     font-weight: 600;
-}
-.top-menu-list li:first-child {
-    justify-self: end;
-}
-.top-menu-list li:nth-child(2) {
     justify-self: center;
-}
-.top-menu-list li:nth-child(3) {
-    margin-right: -34px;
+    grid-gap: 20px;
 }
 .top-contacts {
-    margin-top: 2.64em;
-    grid-template-columns: 20px 20px auto auto;
-    align-self: flex-start;
+    grid-template-columns: 40px 40px auto auto;
     font-size: 18px;
 }
 .top-contacts p {
-    margin: 0;
-    padding-left: 5em;
-    justify-self: end;
-    align-self: center;
     font-weight: 400;
+    padding-left: 4em;
 }
 .top-contacts a:nth-child(4){
-    margin-right: 3em;
-    justify-self: end;
-    align-self: center;
     text-decoration: underline;
     color: #89b2ff;
     font-weight: 500;
+    justify-self: end;
 }
 .top-contacts a:nth-child(4):hover {
     opacity:1;
