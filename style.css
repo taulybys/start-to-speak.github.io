@@ -172,8 +172,8 @@ ul {
 /* SECITEM-2 */
 
 .section-item-2 form{
-    grid-template-columns: repeat(4, 200px);
-    grid-gap: 10px;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 15px;
 }
 input[type="number"] {
     padding: 0.8em 1em;
@@ -544,8 +544,9 @@ input:focus {
     margin-top: 12em;
 }
 .result {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 25%);
     grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
     height: 210px;
     padding-left: 5em;
     color: #fffbfbc0;
