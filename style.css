@@ -577,6 +577,18 @@ input:focus {
     grid-template-rows: 310px;
     grid-gap: 20px;
 }
+.review a {
+    text-decoration: underline;
+    color: #5c5c5c;
+    justify-self: start;
+    align-self: end;
+    font-size: 10px;
+    margin-bottom: 19px;
+}
+.review a:hover {
+    opacity: 1;
+    color: #FE5501;
+}
 .circle {
     width: 100px;
     height: 100px;
@@ -586,16 +598,22 @@ input:focus {
     background-position: center;
 }
 .back-img-item-1 {
-    background-image: url(images/keanu.jpg);
+    background-image: url(отзывы/Валентина/IMG-20200509-WA0006.jpg);
 }
 .back-img-item-2 {
-    background-image: url(images/neo.jpg);
+    background-image: url(отзывы/Гульнара/IMG-20200509-WA0004.jpg);
 }
 .back-img-item-3 {
-    background-image: url(images/durov.jpg);
+    background-image: url(отзывы/Елена/IMG-20200509-WA0002.jpg);
 }
 .back-img-item-4 {
-    background-image: url(images/zendaya.jpg);
+    background-image: url(отзывы/Карина/Screenshot_20200509-195019_2.png);
+}
+.crop-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 9;
+    -webkit-box-orient: vertical;
+    overflow-y: hidden;
 }
 .r-i-col {
     grid-template-columns: auto 140px;
@@ -610,7 +628,7 @@ input:focus {
 .review p {
     font-weight: 500;
     grid-template-rows: 1fr;
-    font-size: 14px;
+    font-size: 10px;
     line-height: 16px;
     margin-left: 3em;
     justify-self: start;
@@ -679,7 +697,8 @@ input:focus {
 }
 .footer-contacts {
     grid-template-columns: repeat(3, auto);
-    justify-self: center;
+    grid-gap: 10px;
+    justify-self: start;
     align-self: center;
     font-size: 14px;
 }
@@ -696,7 +715,7 @@ input:focus {
     height: 18px;
 }
 .logo-footer {
-    justify-self: end;
+    justify-self: center;
     align-self: center;
 }
 .logo-footer img {
@@ -725,6 +744,8 @@ input:focus {
 }
 .credits h5 {
     padding: 0px;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 
