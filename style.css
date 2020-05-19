@@ -749,8 +749,10 @@ input:focus {
 
 
 
-
+/*---------------------------------------------------------------------*/
 /*new page course*/
+/*---------------------------------------------------------------------*/
+
 
 .podbor-course-1 {
     margin-top: 20px;
@@ -774,7 +776,6 @@ input:focus {
     height: 380px;
 }
 .btn-on {
-
     grid-area: btn1;
 }
 .btn-skype {
@@ -788,7 +789,7 @@ input:focus {
     overflow: auto;
     margin-top: 30px;
     margin: auto;
-    max-width: 1200px;
+    max-width: 1280px;
     height: 900px;
     margin: auto;
     position: relative;
@@ -816,8 +817,9 @@ width: 150px;
 height: 80px;
 left: 980px;
 top: 210px;
+font-weight: 500;
 border: 1px solid #E12828;
-box-sizing: border-box;
+align-items: end;
 } 
 .upper-intermediate {
 position: absolute;
@@ -825,8 +827,9 @@ width: 330px;
 height: 80px;
 left: 800px;
 top: 310px;
+font-weight: 500;
 border: 1px solid #FE7F01;
-box-sizing: border-box;
+align-items: end;
 }
 .intermediate {
 position: absolute;
@@ -834,8 +837,36 @@ width: 500px;
 height: 80px;
 left: 630px;
 top: 410px;
+font-weight: 500;
 border: 1px solid #FFB200;
-box-sizing: border-box;
+align-items: end;
+}
+.intermediate span {
+    opacity: 1;
+    position: relative;
+}
+.intermediate p {
+    opacity: 0;
+    position: relative;
+}
+.intermediate:hover span {
+opacity: 0; 
+position: relative;
+}
+.intermediate:hover p {
+    opacity: 1;
+    position: relative;
+    z-index: 2;
+    margin-top: -16px;
+    margin-right: 5px;
+}
+.intermediate:hover {
+    width: 1100px;
+    height: 90px;
+    left: 30px;
+    top: 400px;
+    z-index: 2;
+    background-color: #FFB200;
 }
 .pre-intermediate {
 position: absolute;
@@ -843,8 +874,37 @@ width: 700px;
 height: 80px;
 left: 430px;
 top: 510px;
+font-weight: 500;
 border: 1px solid #FFE600;
-box-sizing: border-box;
+align-items: end;
+}
+.pre-intermediate span {
+    opacity: 1;
+    position: relative;
+}
+.pre-intermediate p{
+    opacity: 0;
+    position: relative;
+}
+.pre-intermediate:hover span {
+opacity: 0; 
+position: relative;
+}
+.pre-intermediate:hover p {
+    opacity: 1;
+    position: relative;
+    z-index: 2;
+    margin-top: -16px;
+    margin-right: 5px;
+
+}
+.pre-intermediate:hover {
+    width: 1100px;
+    height: 90px;
+    top: 500px;
+    left: 30px;
+    z-index: 2;
+    background-color: #FFE600;
 }
 .elementary {
 position: absolute;
@@ -852,8 +912,37 @@ width: 900px;
 height: 80px;
 left: 230px;
 top: 610px;
-border: 1px solid #A1D0AC;
-box-sizing: border-box;
+font-weight: 500;
+border: 1px solid #A5EF00;
+align-items: end;
+}
+.elementary span {
+    opacity: 1;
+    position: relative;
+}
+.elementary p{
+    opacity: 0;
+    position: relative;
+}
+.elementary:hover span {
+opacity: 0; 
+position: relative;
+}
+.elementary:hover p {
+    opacity: 1;
+    position: relative;
+    z-index: 2;
+    margin-top: -16px;
+    margin-right: 5px;
+
+}
+.elementary:hover {
+    width: 1100px;
+    height: 90px;
+    left: 30px;
+    top: 600px;
+    z-index: 2;
+    background-color: #A5EF00;
 }
 .Start {
 position: absolute;
@@ -861,8 +950,32 @@ width: 1100px;
 height: 80px;
 left: 30px;
 top: 710px;
+font-weight: 500;
 border: 1px solid #4BDC35;
-box-sizing: border-box;
+align-items: end;
+}
+.Start span {
+    opacity: 1;
+    position: relative;
+}
+.Start p{
+    opacity: 0;
+    position: relative;
+}
+.Start:hover span {
+opacity: 0; 
+position: relative;
+}
+.Start:hover p {
+    opacity: 1;
+    position: relative;
+    z-index: 2;
+    margin-top: -16px;
+    margin-right: 5px;
+
+}
+.Start:hover {
+    background-color: #48dc35;
 }
 .babyad {
     position: absolute;
@@ -905,4 +1018,54 @@ box-sizing: border-box;
     height: 200px;
     left: 990px;
     top: 10px;
+}
+.horisont {
+    width: 50px;
+    border: 1px solid #2c3e50;
+}
+.line1 {
+    position: absolute;
+    right: 99px;
+    top: 380px;
+}
+.line2 {
+    position: absolute;
+    right: 99px;
+    top: 550px;
+}
+.line3 {
+    position: absolute;
+    right: 99px;
+    top: 580px;
+}
+.line4 {
+    position: absolute;
+    right: 99px;
+    top: 780px;
+}
+.vertical {
+    border: 1px solid #2c3e50;
+    transform: rotate(90deg);
+}
+.line5 {
+    position: absolute;
+    right: 14px;
+    top: 465px;
+    width: 169px;
+}
+.line6 {
+    position: absolute;
+    right: 1px;
+    top: 680px;
+    width: 197px;
+}
+.Block1 {
+    position: absolute;
+    right: 0px;
+    top: 680px;
+}
+.Block2 {
+    position: absolute; 
+    right: 0px;
+    top: 465px;
 }
