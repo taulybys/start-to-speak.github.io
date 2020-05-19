@@ -1262,3 +1262,66 @@ position: relative;
     grid-area: dbtn;
     font-size: 24px;
 }
+
+
+/*-----------------------------------------------*/
+/*page about me*/
+/*-----------------------------------------------*/
+
+.about {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat (2, 1fr);
+    grid-gap: 40px;
+}
+.images-about {
+    position: relative;
+}
+.txt {
+    width: 800px;
+    line-height: 30px;
+}
+.txt p{
+    margin: 15px;
+}
+.rectangle-np {
+    position: absolute;
+    width: 400px;
+    height: 527px;
+    right: -53px;
+    top: 112px;
+    z-index: 200;
+    border: 1px solid #FFB200;
+    box-sizing: border-box;
+    border-radius: 231.5px 0px;
+}
+.rounded-photo-np {
+    position: absolute;
+    width: 400px;
+    height: 527px;
+    right: -10px;
+    top: 70px;
+    z-index: 200;
+    background-blend-mode: normal;
+    border-radius: 231.5px 0px;
+}
+.rectangle-np2 {
+    position: absolute;
+    width: 400px;
+    height: 527px;
+    left: 0px;
+    top: 70px;
+    z-index: 200;
+    border: 1px solid #FFB200;
+    box-sizing: border-box;
+    border-radius: 231.5px 0px;
+}
+.rounded-photo-np2 {
+    position: absolute;
+    width: 400px;
+    height: 527px;
+    left: 42px;
+    top: 140px;
+    z-index: 200;
+    background-blend-mode: normal;
+    border-radius: 231.5px 0px;
+}
