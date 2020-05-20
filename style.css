@@ -1413,3 +1413,18 @@ font-weight: normal;
     background: url(images/muz.jpg) 100% no-repeat;
     margin-bottom:  60px;
 }
+
+
+/*----------------------------------*/
+/*page-otzyvy-list*/
+/*---------------------------------*/
+
+.otzyvy-grid {
+    grid-template-rows: repeat(5, 1fr);
+}
+.otzyvy-block {
+    background-color: rgba(255, 255, 0, 0.3);
+}
+.otzyvy-block h6 {
+    font-size: 18px;
+}
