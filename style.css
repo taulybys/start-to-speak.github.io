@@ -1269,26 +1269,44 @@ position: relative;
 /*-----------------------------------------------*/
 
 .about {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat (2, 1fr);
-    grid-gap: 40px;
+    grid-template-rows: repeat (3, auto);
+    grid-gap: 50px;
+}
+.first-about {
+    grid-template-columns: repeat(2, auto);
+}
+.second-about {
+    grid-template-columns: repeat(2, auto);
+}
+.third-about {
+    grid-template-rows: 1fr 2fr;
+    grid-gap: 35px;
+    margin-top: 25px;
 }
 .images-about {
     position: relative;
 }
 .txt {
-    width: 800px;
+    max-width: 690px;
     line-height: 30px;
 }
 .txt p{
     margin: 15px;
 }
+.images-about1 {
+    margin-top:     80px;
+    align-self: center;
+    justify-self: end;
+}
+.images-about2 {
+        margin-top: 60px;
+    align-self: center;
+    justify-self: start;
+}
 .rectangle-np {
-    position: absolute;
-    width: 400px;
-    height: 527px;
-    right: -53px;
-    top: 112px;
+    position: relative;
+    width: 390px;
+    height: 404px;
     z-index: 200;
     border: 1px solid #FFB200;
     box-sizing: border-box;
@@ -1296,20 +1314,18 @@ position: relative;
 }
 .rounded-photo-np {
     position: absolute;
-    width: 400px;
-    height: 527px;
-    right: -10px;
-    top: 70px;
-    z-index: 200;
+    width: 390px;
+    height: 404px;
+    right: 30px;
+    top: -30px;
+    z-index: 300;
     background-blend-mode: normal;
     border-radius: 231.5px 0px;
 }
 .rectangle-np2 {
-    position: absolute;
-    width: 400px;
-    height: 527px;
-    left: 0px;
-    top: 70px;
+    position: relative;
+    width: 390px;
+    height: 404px;
     z-index: 200;
     border: 1px solid #FFB200;
     box-sizing: border-box;
@@ -1317,11 +1333,26 @@ position: relative;
 }
 .rounded-photo-np2 {
     position: absolute;
-    width: 400px;
-    height: 527px;
-    left: 42px;
-    top: 140px;
-    z-index: 200;
+    width: 390px;
+    height: 404px;
+    right: 30px;
+    top: -30px;
+    z-index: 300;
     background-blend-mode: normal;
     border-radius: 231.5px 0px;
 }
+.motivation{
+    text-align: center; 
+    font-family: "Ekaterina";
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom:  55px;
+}
+
+@font-face {
+/*шрифт*/
+font-family: "Ekaterina";
+src: url("fonts/ofont.ru_Ekaterina Velikaya Two.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 
