@@ -33,6 +33,13 @@ a {
     font-weight: 700;
     color: #2C3E50;
 }
+.btn-yellow-s {
+    padding: 7px 25px;
+    background: linear-gradient(#FFE600, #FFB200);
+    border-radius: 30px;
+    font-weight: 700;
+    color: #2C3E50;
+}
 .width1440 {
     width: 1440px;
     margin: 0 auto;
@@ -1356,3 +1363,53 @@ src: url("fonts/ofont.ru_Ekaterina Velikaya Two.ttf") format("truetype");
 font-style: normal; 
 font-weight: normal; 
 } 
+
+
+
+
+/*--------------------------------*/
+        /*akcii page*/
+/*---------------------------------*/
+
+.akcii {
+    grid-template-rows: repeat (4, 300px);
+    grid-gap: 40px;
+}
+.akcii-block {
+    width: 1140px;
+    height: 300px;
+    grid-template-rows: 2fr 1fr;
+}
+.podrobnee-knop {
+    width: 120px;
+    height: 30px;
+    margin-left: 40px;
+    font-size: 19px;
+    font-weight: 500;
+}
+.yellow-txt {
+    color: #FFE600;
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 40px;
+    align-self: end;
+}
+.dark-txt {
+    font-size: 25px;
+    font-weight: 600;
+    margin-left:  40px;
+    align-self: end;
+}
+.hot-10 {
+    background: url(images/cubes.jpg) no-repeat;
+}
+.for-bro {
+    background: url(images/bro.jpg) 100% no-repeat;
+}
+.opt {
+    background: url(images/opt.jpg) 100% no-repeat;
+}
+.megamuzlo {
+    background: url(images/muz.jpg) 100% no-repeat;
+    margin-bottom:  60px;
+}
