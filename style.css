@@ -1428,3 +1428,12 @@ font-weight: normal;
 .otzyvy-block h6 {
     font-size: 18px;
 }
+
+
+/*-----------------------------------*/
+/*page otzyvy-buttons*/
+/*-----------------------------------*/
+.two-btns {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+}
