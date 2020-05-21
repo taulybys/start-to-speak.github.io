@@ -1433,7 +1433,56 @@ font-weight: normal;
 /*-----------------------------------*/
 /*page otzyvy-buttons*/
 /*-----------------------------------*/
+.otzyv-twobutt-grid {
+    grid-template-rows: 100px 600px;
+    grid-row-gap: 10px;
+    margin: auto;
+    margin-top: -30px;
+}
 .two-btns {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px;
+    grid-template-columns: repeat(2, 570px);
+    margin: 20px auto 20px auto;
+}
+.large-buttons{
+    padding: 40px 25px;
+    background: linear-gradient(#FFE600, #FFB200);
+    border-radius: 50px;
+    width: 280px;
+    height: 20px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #2c3e50;
+    justify-self: center;
+}
+.look-to-left {
+    position: relative;
+}
+.look-to-right {
+    position: relative;
+}
+.look-to-left img {
+    opacity: 0;
+    -webkit-transition: background-color 3s ease-out;
+  -moz-transition: background-color 3s ease-out;
+  -o-transition: background-color 3s ease-out;
+  transition: background-color 3s ease-out;
+}
+.look-to-right img {
+    opacity: 0;
+    -webkit-transition: background-color 3s ease-out;
+  -moz-transition: background-color 3s ease-out;
+  -o-transition: background-color 3s ease-out;
+  transition: background-color 3s ease-out;
+}
+.look-to-left:hover img {
+    position: absolute;
+    top: 170px;
+    right: -350px;
+    opacity: 1;
+}
+.look-to-right:hover img {
+    position: absolute;
+    top: 170px;
+    left: -350px;
+    opacity: 1;
 }
