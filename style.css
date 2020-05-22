@@ -214,78 +214,12 @@ ul {
     cursor: pointer;
 }
 
-/* media */
-
-    @media screen and (max-width: 380px) {
-        body {
-            width: auto;
-        }
-        .top-content {
-            grid-template-columns: none;
-            grid-template-rows: 130px 30px 30px;
-            justify-items: center;
-        }
-        .logo img{
-            width: 174px;
-            height: 147px;
-        }
-        .telegram {
-            width: 16px;
-            height: 16px;
-        }
-        .instagram {
-            width: 16px;
-            height: 16px;
-        }
-        ul {
-            padding-left: 0;
-        }
-        .top-menu {
-            font-size: 18px;
-        }
-        .top-menu-list a{
-            color: #2C3E50;
-        }
-        .top-menu-list a:hover {
-            opacity:1;
-            color: #ff6600;
-            cursor: pointer;
-        }
-        .top-menu-list {
-            /* grid-template-columns: none;
-            grid-template-rows: repeat(4, auto); */
-            grid-gap: 60px;
-            font-weight: 600;
-        }
-        .top-contacts {
-            grid-template-rows: repeat(4, auto);
-            font-size: 18px;
-            grid-gap: 40px;
-        }
-        .top-contacts p {
-            justify-items: start;
-            font-weight: 400;
-        }
-        .top-contacts a:nth-child(4){
-            text-decoration: underline;
-            color: #89b2ff;
-            font-weight: 500;
-            justify-self: end;
-        }
-        .top-contacts a:nth-child(4):hover {
-            opacity:1;
-            color: #ff6600;
-            cursor: pointer;
-        }
-    }
-
 /* SECTION */
 
 /* SECITEM-1 */
  
 .section-item-1 {
     grid-template-columns: 50% 50%;
-
 }
 .section-item-1 div:first-child {
     justify-self: end;
@@ -396,6 +330,127 @@ input:focus {
     font-size: 24px;
     font-weight: 600;
 }
+
+/* media */
+
+@media screen and (max-width: 400px) {
+    .top-content {
+        max-width: 320px;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: repeat(2, auto);
+        justify-content: start;
+        margin-left: 3%;
+        grid-row-gap: 20px;
+    }
+    .top-menu-list {
+        grid-template-columns: none;
+        grid-template-rows: repeat(4, auto);
+        grid-gap: 20px;
+        font-weight: 600;
+        justify-items: end;
+    }
+    .m0 {
+        margin: auto 0;
+    }
+    .top-menu {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .top-contacts {
+        grid-template-columns: none;
+        grid-template-rows: repeat(4, auto);
+        font-size: 12px;
+        grid-gap: 20px;
+        grid-column: 2/3;
+        grid-row: 1;
+        justify-items: end;
+    }
+    .section-item-1 {
+        display: flex;
+        max-width: 320px;
+    }
+    .section-item-1 h1 {
+        line-height: 1.5em;
+        font-size: 23px;
+    }
+    .section-item-1 img {
+        display: none;
+    }
+    .section-item-2 h2 {
+        max-width: 320px;
+        font-size: 20px;
+    }
+    .section-item-2 form{
+        margin-left: 25px;
+        width: 320px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+    input[type="number"] {
+        margin: 10px;
+    }
+    .select {
+        margin: 10px;
+    }
+    .section-item-3 h2{
+        max-width: 320px;
+        font-size: 20px;
+    }
+
+    .course {
+        max-width: 360px;
+        grid-template-areas: "ci1 ci2"
+                             "ci3 ci4"
+                             "ci5 ci6" ;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 12px;
+
+    }
+    .course a {
+        align-self: flex-end;
+        font-size: 10px;
+        color: #7C98B5;
+    }
+    .course a:hover {
+        opacity: 1;
+        color: #ff6600;
+    }
+    .course h4 {
+        margin: 0;
+        margin-bottom: 1em;
+        align-self: auto;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .course p {
+        color: #FE5501;
+        justify-self: end;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .b-black {
+        border: 3px solid #2c3e50;
+        width: 120px;
+        height: 140px;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-bottom: 1em;
+        border-radius: 80px 0 80px 0;
+    }
+    .b-yellow {
+        border:3px solid #ffb200;
+        width: 120px;
+        height: 140px;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-bottom: 1em;
+        border-radius: 80px 0 80px 0;
+    
+    }
+
+}
+
 
 /* SECITEM-4 */
 
