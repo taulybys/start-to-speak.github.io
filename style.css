@@ -784,6 +784,12 @@ input:focus {
     width: 424px;
     height: 380px;
 }
+.podbor-course-1 a:hover {
+    opacity:1;
+    background: linear-gradient( #FFB200, #FFE600); 
+    cursor: pointer;
+}
+}
 .btn-on {
     grid-area: btn1;
 }
@@ -1200,11 +1206,17 @@ position: relative;
     grid-gap:   30px;
     padding: 40px;
 }
-.million span {
+.million a {
     width: 280px;
     height: 35px;
     font-size: 24px;
     font-weight: 600;
+}
+.million a:hover {
+        opacity:1;
+    background: #fff; 
+    color: #2c3e50;
+    cursor: pointer;
 }
 .million h3 {
     align-self: end;
@@ -1263,11 +1275,20 @@ position: relative;
     height: 30px;
     grid-area: ybtn;
 }
+.y-knopa:hover {
+    opacity:1;
+    background: linear-gradient( #FFB200, #FFE600); 
+    cursor: pointer;
+}
 .d-knopa {
     width: 320px;
     height: 30px;
     grid-area: dbtn;
     font-size: 24px;
+}
+.d-knopa:hover {
+    background: #fff;
+    color: #2c3e50;
 }
 
 
@@ -1399,6 +1420,17 @@ font-weight: normal;
     font-weight: 600;
     margin-left:  40px;
     align-self: end;
+}
+.btn-yellow-s:hover {
+    opacity:1;
+    background: linear-gradient( #FFB200, #FFE600); 
+    cursor: pointer;
+}
+.btn-dark:hover {
+        opacity:1;
+    background: #fff;
+    color: #2c3e50; 
+    cursor: pointer;
 }
 .hot-10 {
     background: url(images/cubes.jpg) no-repeat;
