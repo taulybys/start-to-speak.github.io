@@ -11,6 +11,21 @@
     <script src='main.js'></script>
 </head>
 <body>  
+         <div class="preloader">
+    <div class="preloader__row">
+      <div class="preloader__item"></div>
+      <div class="preloader__item"></div>
+    </div>
+  </div>
+    <script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+  </script>
     <header class="header">
         <div class="top-content width1440 d-grid">
             <a href="index.html">
