@@ -41,15 +41,15 @@ a {
     color: #2C3E50;
 }
 .width1440 {
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 .width1140 {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 .width840 {
-    width: 840px;
+    max-width: 840px;
 }
 .b-black {
     border: 3px solid #2c3e50;
@@ -248,12 +248,13 @@ ul {
         }
         .top-content {
             grid-template-columns: none;
-            grid-template-rows: 130px 30px 30px;
+            grid-template-rows: repeat(3, auto);
+            grid-row-gap: 20px;
             justify-items: center;
         }
         .logo img{
-            width: 174px;
-            height: 147px;
+            width: 140px;
+            height: 120px;
         }
         .telegram {
             width: 16px;
@@ -267,10 +268,15 @@ ul {
             padding-left: 0;
         }
         .top-menu {
-            font-size: 18px;
+            font-size: 16px;
+}
+        .top-menu-list a {
+            color: #2C3E50; 
+        } 
+        .top-menu-list {
+            grid-template-columns: repeat(2, 1fr);
+             grid-template-rows: repeat(2, 1fr);
         }
-        .top-menu-list a{
-            color: #2C3E50;
         }
         .top-menu-list a:hover {
             opacity:1;
