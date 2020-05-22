@@ -10,7 +10,7 @@ let BottomPosition = 0;
 						AnimateFlag = false;
 					});
 				BottomFlag = false;
-				$('.inTop span').html('Наверх');
+				$('.inTop span').html('Вверх');
 				}
 				else {
 					$("body,html").animate({"scrollTop":0}, 200, function() {
@@ -30,7 +30,7 @@ let BottomPosition = 0;
 					$('.inTop').show();
 					if(BottomFlag) {
 						BottomFlag = false;
-						$('.inTop span').html('Наверх');
+						$('.inTop span').html('Вверх');
 					}
 				}
 				else {
