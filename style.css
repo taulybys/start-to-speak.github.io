@@ -1385,25 +1385,32 @@ input:focus {
     width: 1140px;
     height: 300px;
     grid-template-rows: 2fr 1fr;
+    grid-gap: 50px;
+    align-self: start;
 }
 .podrobnee-knop {
-    width: 120px;
-    height: 30px;
     margin-left: 40px;
     font-size: 19px;
     font-weight: 500;
 }
 .yellow-txt {
     color: #FFE600;
-    font-size: 25px;
-    font-weight: 600;
+    font-size: 46px;
+    font-weight: 700;
     margin-left: 40px;
     align-self: end;
 }
+.yel:hover {
+    background: #FFE600;
+}
+.dar:hover {
+    background: #ffffff;
+    color: #2c3e50;
+}
 .dark-txt {
-    font-size: 25px;
+    font-size: 46px;
     font-weight: 600;
-    margin-left:  40px;
+    margin-left: 40px;
     align-self: end;
 }
 .hot-10 {
