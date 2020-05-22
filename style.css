@@ -242,7 +242,7 @@ ul {
 
 /* media */
 
-    @media screen and (max-width: 380px) {
+@media screen and (max-width: 380px) {
         body {
             width: auto;
         }
@@ -269,14 +269,13 @@ ul {
         }
         .top-menu {
             font-size: 16px;
-}
+        }
         .top-menu-list a {
             color: #2C3E50; 
         } 
         .top-menu-list {
             grid-template-columns: repeat(2, 1fr);
              grid-template-rows: repeat(2, 1fr);
-        }
         }
         .top-menu-list a:hover {
             opacity:1;
@@ -290,15 +289,17 @@ ul {
             font-weight: 600;
         }
         .top-contacts {
-            grid-template-rows: repeat(4, auto);
-            font-size: 18px;
-            grid-gap: 40px;
+            grid-template-rows: repeat(2, auto);
+            grid-template-columns: repeat(2, auto);
+            justify-items: center;
+            font-size: 16px;
+            grid-gap: 30px;
         }
         .top-contacts p {
             justify-items: start;
             font-weight: 400;
         }
-        .top-contacts a:nth-child(4){
+        .top-contacts a:nth-child(4) {
             text-decoration: underline;
             color: #89b2ff;
             font-weight: 500;
@@ -309,24 +310,91 @@ ul {
             color: #ff6600;
             cursor: pointer;
         }
-    }
+        .section-item-1 {
+    grid-template-columns: none;
+}
+.section-item-1 img {
+    max-width: 80%;
+    text-align: center;
+    margin-top: -100px;
+}
+.section-item-1 h1 {
+        font-size: 26px !important;
+        text-align: center;
+}
+.section-item-1 h4 {
+        font-size: 18px !important;
+}
+.section-item-1 a {
+    margin: auto;
+    font-size: 16px;
+}
+.section-item-2 form {
+    grid-template-columns: none !important;
+    grid-template-rows: repeat(4, 1fr);
+}
+.course {
+        grid-template-areas: "ci1"
+                              "ci2"
+                             "ci3"
+                             " ci4"
+                             "ci5"
+                              "ci6" !important;
+    grid-template-columns: none;
+    grid-gap: 10px;
+    justify-items: center;
+    margin: auto;
+}
+.section-item-4 h5 {
+    display: none;
+}
+.section-item-4 a:nth-child(2) {
+    margin-left: 0 !important;
+}
+.section-item-4 a:nth-child(3){
+    margin-left: 0 !important;
+}
+.cases {
+    grid-template-areas: "c1"
+                         "c2"
+                         "c3"
+                         "c4"
+                          "c5"
+                          "c6" !important;
+    grid-template-columns: none !important;
+    grid-template-rows: repeat(6, auto);
+}
+.cases p{
+    display: none;
+}
+.why-create {
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, auto);
+}
+.tarifes {
+    margin-top: 5em;
+    grid-template-areas: "tar"
+                         "start"
+                         "pet"
+                         "intens" ;
+    grid-template-columns: none;
+    grid-gap: 20px;
+}
+}
 
 /* SECTION */
 
 /* SECITEM-1 */
  
-.section-item-1 {
-    grid-template-columns: 50% 50%;
 
-}
 .section-item-1 div:first-child {
-    justify-self: end;
+    justify-self: start;
     z-index: 1;
 }
 .section-item-1 img {
-    justify-self: center;
+    justify-self: end;
     margin-left: -80px;
-    margin-top: -90px;
+    margin-top: -390px;
     z-index: 0;
 }
 .section-item-1 h1 {
@@ -457,7 +525,7 @@ input:focus {
 .section-item-4 div:nth-child(1) {
     margin: 0 auto;
     padding-left: 7.5em;
-    width: 1140px;
+    max-width: 1140px;
     height: 264px;
     background: url("images/photo-1521572267360-ee0c2909d518.jpg") no-repeat 830px;
     font-size: 22px;
@@ -486,8 +554,8 @@ input:focus {
     z-index: 1;
 }
 .case-img {
-    width: 316px;
-    height: 360px;
+    max-width: 316px;
+    max-height: 360px;
 }
 .cases {
     grid-template-areas: "c1 c2 c3"
@@ -596,7 +664,7 @@ input:focus {
     grid-template-columns: repeat(2, 1fr);
     margin-top: 6em;
     margin: auto;
-    width: 1140px;
+    max-width: 1140px;
     height: 500px;
     position: relative;
 }
@@ -620,7 +688,7 @@ input:focus {
 
 .rounded-photo {
     position: absolute;
-    width: 450px;
+    max-width: 450px;
     height: 450px;
     right: -10px;
     top: 10px;
@@ -680,7 +748,7 @@ input:focus {
 }
 .good-start {
     grid-area: start;
-    width: 320px;
+    max-width: 320px;
     height: 450px;
     border: 3px solid #ffb200;
     text-align: center;
@@ -689,7 +757,7 @@ input:focus {
 }
 .teacher-pet {
     grid-area: pet;
-    width: 420px;
+    max-width: 420px;
     height: 499px;
     border: 3px solid #ffb200;
     text-align: center;
@@ -698,7 +766,7 @@ input:focus {
 }
 .intensive {
     grid-area: intens;
-    width: 320px;
+    max-width: 320px;
     height: 450px;
     border: 3px solid #ffb200;
     text-align: center;
