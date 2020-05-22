@@ -1017,7 +1017,7 @@ input:focus {
 }
 .podbor-course-1 a:hover {
     opacity:1;
-    background: linear-gradient( #FFB200, #FFE600); 
+    background: #FFE600; 
     cursor: pointer;
 }
 }
