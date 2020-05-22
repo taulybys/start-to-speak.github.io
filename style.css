@@ -292,8 +292,9 @@ ul {
     z-index: 1;
 }
 .section-item-1 img {
-    justify-self: start;
-    margin-left: -100px;
+    justify-self: center;
+    margin-left: -80px;
+    margin-top: -90px;
     z-index: 0;
 }
 .section-item-1 h1 {
