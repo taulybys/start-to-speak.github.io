@@ -11,11 +11,28 @@
     <script src='main.js'></script>
 </head>
 <body>
+         <div class="preloader">
+    <div class="preloader__row">
+      <div class="preloader__item"></div>
+      <div class="preloader__item"></div>
+    </div>
+  </div>
+    <script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+  </script>
     <header class="header">
     <div class="top-content width1440 d-grid">
+        <a href="index.html">
         <div class="logo">
             <img src="images/logo.png" alt="Start to Speak" title="Start to Speak"/>
         </div>
+        </a>
         <nav class="top-menu d-grid m0">
             <ul class="top-menu-list d-grid l-style-n m0">
                 <li><a href="course.html">Курсы</a></li>
@@ -36,6 +53,21 @@
         <h2 class = "secondary-title"> Самые горячие предложения</h2>
         <div class="akcii d-grid"> 
         <div class = "hot-10 akcii-block d-grid">
+            <h4 class = "yellow-txt">Дарим первым 9</h4>
+            <a class="btn-yellow-s podrobnee-knop" href="   ">Подробнее</a>
+        </div>
+        <div class = "for-bro akcii-block d-grid">
+            <h4 class = "dark-txt">Приведи друга и получи скидку 5%</h4>
+            <a class="btn-dark podrobnee-knop" href="   ">Подробнее</a>
+        </div>
+        <div class = "opt akcii-block d-grid">
+            <h4 class = "yellow-txt">Оптом дешевле</h4>
+            <a class="btn-yellow-s podrobnee-knop" href="   ">Подробнее</a>
+        </div>
+        <div class = "megamuzlo akcii-block d-grid">
+            <h4 class = "dark-txt">Мега кино- и музломан. Пакет кино и музыка со скидкой</h4>
+            <a class="btn-dark podrobnee-knop" href="   ">Подробнее</a>
+
             <h4 class = "yellow-txt m0">Дарим первым 9</h4>
             <a href=""><span class="btn-yellow-s podrobnee-knop yel">Подробнее</span></a>
         </div>

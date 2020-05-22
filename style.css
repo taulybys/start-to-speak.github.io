@@ -81,6 +81,78 @@ a {
     padding: 0;
 }
 
+/*---------------------*/
+/*прелоадер*/
+ .preloader {
+      /*фиксированное позиционирование*/
+      position: fixed;
+      /* координаты положения */
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      /* фоновый цвет элемента */
+      background: #fff;
+      /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+      z-index: 1001;
+    }
+
+    .preloader__row {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      width: 70px;
+      height: 70px;
+      margin-top: -35px;
+      margin-left: -35px;
+      text-align: center;
+      animation: preloader-rotate 2s infinite linear;
+    }
+
+    .preloader__item {
+      position: absolute;
+      display: inline-block;
+      top: 0;
+      background-color: #ffb200;
+      border-radius: 100%;
+      width: 35px;
+      height: 35px;
+      animation: preloader-bounce 2s infinite ease-in-out;
+    }
+
+    .preloader__item:last-child {
+      top: auto;
+      bottom: 0;
+      animation-delay: -1s;
+    }
+
+    @keyframes preloader-rotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes preloader-bounce {
+
+      0%,
+      100% {
+        transform: scale(0);
+      }
+
+      50% {
+        transform: scale(1);
+      }
+    }
+
+    .loaded_hiding .preloader {
+      transition: 0.3s opacity;
+      opacity: 0;
+    }
+
+    .loaded .preloader {
+      display: none;
+    }
+
 
 /* HEADER */
 
@@ -765,7 +837,7 @@ input:focus {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     width: 800px;
-    padding: 10em;
+    padding: 6em;
 }
 .section-item-9 h2 {
     font-size: 36px;
@@ -792,6 +864,11 @@ input:focus {
     font-weight: 700;
     color: #2C3E50;
     
+}
+.backgound-tarif--to-footer {
+    background: url(images/backforjoin.jpg) no-repeat;
+    background-position: center center;
+
 }
 
 /* FOOTER */
@@ -904,6 +981,12 @@ input:focus {
     width: 424px;
     height: 380px;
 }
+.podbor-course-1 a:hover {
+    opacity:1;
+    background: linear-gradient( #FFB200, #FFE600); 
+    cursor: pointer;
+}
+}
 .btn-on {
     grid-area: btn1;
 }
@@ -912,18 +995,19 @@ input:focus {
 }
 .podbor-course-2 {
     margin-top: 20px;
+    background-color: #f1f4f7;
 }
 .pyramide {
     overflow: auto;
     margin-top: 70px;
     margin: auto;
     max-width: 1300px;
-    height: 1150px;
+    height: 900px;
     margin: auto;
     position: relative;
 }
 .title-list {
-    margin-top: -230px;
+    /*margin-top: -230px;*/
 }
 .super-top {
     margin-top: 35px;
@@ -974,7 +1058,8 @@ input:focus {
 .advanced p {
     opacity: 0;
     position: relative;
-    line-height: 25px;
+    line-height: 5px;
+    font-size: 1px;
 }
 .advanced:hover span {
     opacity: 0; 
@@ -984,6 +1069,8 @@ input:focus {
     opacity: 1;
     position: relative;
     z-index: 2;
+    line-height: 25px;
+    font-size: 16px;
     margin-top: -16px;
     margin-right: 5px;
     cursor: default; 
@@ -1335,11 +1422,17 @@ input:focus {
     grid-gap:   30px;
     padding: 40px;
 }
-.million span {
+.million a {
     width: 280px;
     height: 35px;
     font-size: 24px;
     font-weight: 600;
+}
+.million a:hover {
+        opacity:1;
+    background: #fff; 
+    color: #2c3e50;
+    cursor: pointer;
 }
 .million h3 {
     align-self: end;
@@ -1398,11 +1491,20 @@ input:focus {
     height: 30px;
     grid-area: ybtn;
 }
+.y-knopa:hover {
+    opacity:1;
+    background: linear-gradient( #FFB200, #FFE600); 
+    cursor: pointer;
+}
 .d-knopa {
     width: 320px;
     height: 30px;
     grid-area: dbtn;
     font-size: 24px;
+}
+.d-knopa:hover {
+    background: #fff;
+    color: #2c3e50;
 }
 
 
@@ -1541,6 +1643,17 @@ input:focus {
     margin-left: 40px;
     align-self: end;
 }
+.btn-yellow-s:hover {
+    opacity:1;
+    background: linear-gradient( #FFB200, #FFE600); 
+    cursor: pointer;
+}
+.btn-dark:hover {
+        opacity:1;
+    background: #fff;
+    color: #2c3e50; 
+    cursor: pointer;
+}
 .hot-10 {
     background: url(images/cubes.jpg) no-repeat;
 }
@@ -1640,4 +1753,98 @@ input:focus {
     top: 148px;
     left: -350px;
     opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------*/
+/*page review-form*/
+/*---------------------------------------*/
+
+
+form {
+    margin: auto;
+}
+.grid-form-map {
+    grid-template-areas: "name age prof"
+                         "review review review"
+                         "button button button";
+    grid-template-columns: 350px 150px 350px;
+    grid-template-rows: 50px 360px;
+    grid-gap: 25px;
+}
+.grid-form-map input {
+    padding: 0.8em 1em;
+    border: 0;
+    border-radius: 4px;
+    background: #E2EAF2;
+}
+.form-client-name {
+    grid-area: name;
+}
+.form-client-age {
+    grid-area: age;
+}
+.form-client-profession {
+    grid-area: prof;
+}
+.form-review {
+    grid-area: review;
+    align-items: start;
+    background-color: #E2EAF2;
+    border: 0;
+}
+.send {
+    width: 200px;
+    height: 60px;
+    background: linear-gradient(#FFE600, #FFB200);
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    grid-area: button;
+    justify-self: center;
+    margin-bottom: 40px;
 }

@@ -11,6 +11,21 @@
     <script src='main.js'></script>
 </head>
 <body>
+     <div class="preloader">
+    <div class="preloader__row">
+      <div class="preloader__item"></div>
+      <div class="preloader__item"></div>
+    </div>
+  </div>
+    <script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+  </script>
     <header class="header">
     <div class="top-content width1440 d-grid">
         <div class="logo">
@@ -181,6 +196,7 @@
     		<a href="">Включает в себя→</a>
     	</div>
     </div>
+    <div class="backgound-tarif--to-footer">
     <div class="section-item-7">
         <div class="result width1440 d-grid m0">
             <h3>157</h3>
@@ -239,6 +255,7 @@
         <h2>Присоединяйся!</h2><br>
         <h4>Мы ждем тебя!</h4>
         <a href="">Присоединиться</a>
+    </div>
     </div>
     </section>
     <footer class="footer">
