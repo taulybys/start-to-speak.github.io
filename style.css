@@ -155,7 +155,33 @@ a {
 
 
 /* HEADER */
-
+.inTop {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 20%;
+    height: 100%;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    cursor: pointer;
+    display: none;
+}
+.inTop:hover {
+    background-color:rgba(205, 214, 219, 0.3);
+    z-index: 250;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.inTop span {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+     font-size: 110%;
+    color: #52466a;
+    font-family: Georgia, Times, serif;
+    font-weight: bold;
+}
 .header {
     margin-top: 4em;
 }
@@ -929,7 +955,7 @@ input:focus {
 }
 .podbor-course-1 a:hover {
     opacity:1;
-    background: linear-gradient( #FFB200, #FFE600); 
+    background: #FFE600; 
     cursor: pointer;
 }
 }
