@@ -1677,17 +1677,6 @@ input:focus {
     margin-left: 40px;
     align-self: end;
 }
-.btn-yellow-s:hover {
-    opacity:1;
-    background: linear-gradient( #FFB200, #FFE600); 
-    cursor: pointer;
-}
-.btn-dark:hover {
-        opacity:1;
-    background: #fff;
-    color: #2c3e50; 
-    cursor: pointer;
-}
 .hot-10 {
     background: url(images/cubes.jpg) no-repeat;
 }
