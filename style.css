@@ -1659,7 +1659,7 @@ input:focus {
 }
 .yellow-txt {
     color: #FFE600;
-    font-size: 46px;
+    font-size: 36px;
     font-weight: 700;
     margin-left: 40px;
     align-self: end;
@@ -1672,8 +1672,8 @@ input:focus {
     color: #2c3e50;
 }
 .dark-txt {
-    font-size: 46px;
-    font-weight: 600;
+    font-size: 36px;
+    font-weight: 700;
     margin-left: 40px;
     align-self: end;
 }
