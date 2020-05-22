@@ -173,7 +173,7 @@ ul {
 }
 .section-item-1 a:hover {
     opacity:1;
-    background: linear-gradient( #FFB200, #FFE600); 
+    background: #FFE600; 
     cursor: pointer;
 }
 
@@ -505,7 +505,7 @@ input:focus {
 }
 .tarifes a:nth-child(4):hover {
     opacity:1;
-    background: linear-gradient( #FFB200, #FFE600); 
+    background: #FFE600; 
     cursor: pointer;
 }
 .good-start {
@@ -658,7 +658,7 @@ input:focus {
 }
 .section-item-9 a:hover { 
     opacity: 1;
-    background: linear-gradient( #FFB200, #FFE600); 
+    background: #FFE600; 
     cursor: pointer;
 }
 .section-item-9 a {
@@ -1371,8 +1371,6 @@ input:focus {
 } 
 
 
-
-
 /*--------------------------------*/
         /*akcii page*/
 /*---------------------------------*/
@@ -1463,13 +1461,13 @@ input:focus {
 }
 .two-btns {
     grid-template-columns: repeat(2, 600px);
-    margin: 20px auto 20px auto;
+    align-self: center;
     grid-gap: 30px;
 }
 .large-buttons{
-    padding: 40px 25px;
+    padding: 40px 25px 48px 25px;
     background: linear-gradient(#FFE600, #FFB200);
-    border-radius: 50px;
+    border-radius: 60px;
     width: 280px;
     height: 20px;
     font-size: 26px;
@@ -1477,10 +1475,9 @@ input:focus {
     color: #2c3e50;
     justify-self: center;
     text-align: center;
-    vertical-align: center;
 }
 .large-buttons:hover {
-    background: #FFB200;
+    background: #FFE600;
 }
 .look-to-left {
     position: relative;
@@ -1504,13 +1501,13 @@ input:focus {
 }
 .look-to-left:hover img {
     position: absolute;
-    top: 170px;
+    top: 148px;
     right: -350px;
     opacity: 1;
 }
 .look-to-right:hover img {
     position: absolute;
-    top: 170px;
+    top: 148px;
     left: -350px;
     opacity: 1;
 }
