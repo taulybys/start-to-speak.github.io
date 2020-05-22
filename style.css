@@ -782,7 +782,7 @@ input:focus {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     width: 800px;
-    padding: 10em;
+    padding: 6em;
 }
 .section-item-9 h2 {
     font-size: 36px;
@@ -809,6 +809,11 @@ input:focus {
     font-weight: 700;
     color: #2C3E50;
     
+}
+.backgound-tarif--to-footer {
+    background: url(images/backforjoin.jpg) no-repeat;
+    background-position: center center;
+
 }
 
 /* FOOTER */
@@ -935,18 +940,19 @@ input:focus {
 }
 .podbor-course-2 {
     margin-top: 20px;
+    background-color: #f1f4f7;
 }
 .pyramide {
     overflow: auto;
     margin-top: 70px;
     margin: auto;
     max-width: 1300px;
-    height: 1150px;
+    height: 900px;
     margin: auto;
     position: relative;
 }
 .title-list {
-    margin-top: -230px;
+    /*margin-top: -230px;*/
 }
 .super-top {
     margin-top: 35px;
@@ -997,7 +1003,8 @@ input:focus {
 .advanced p {
     opacity: 0;
     position: relative;
-    line-height: 25px;
+    line-height: 5px;
+    font-size: 1px;
 }
 .advanced:hover span {
     opacity: 0; 
@@ -1007,6 +1014,8 @@ input:focus {
     opacity: 1;
     position: relative;
     z-index: 2;
+    line-height: 25px;
+    font-size: 16px;
     margin-top: -16px;
     margin-right: 5px;
     cursor: default; 
