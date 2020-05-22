@@ -1618,3 +1618,97 @@ input:focus {
     left: -350px;
     opacity: 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------*/
+/*page review-form*/
+/*---------------------------------------*/
+
+
+form {
+    margin: auto;
+}
+.grid-form-map {
+    grid-template-areas: "name age prof"
+                         "review review review"
+                         "button button button";
+    grid-template-columns: 350px 150px 350px;
+    grid-template-rows: 50px 360px;
+    grid-gap: 25px;
+}
+.grid-form-map input {
+    padding: 0.8em 1em;
+    border: 0;
+    border-radius: 4px;
+    background: #E2EAF2;
+}
+.form-client-name {
+    grid-area: name;
+}
+.form-client-age {
+    grid-area: age;
+}
+.form-client-profession {
+    grid-area: prof;
+}
+.form-review {
+    grid-area: review;
+    align-items: start;
+    background-color: #E2EAF2;
+    border: 0;
+}
+.send {
+    width: 200px;
+    height: 60px;
+    background: linear-gradient(#FFE600, #FFB200);
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    grid-area: button;
+    justify-self: center;
+    margin-bottom: 40px;
+}
