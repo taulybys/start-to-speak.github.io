@@ -867,6 +867,8 @@ input:focus {
     margin-top: -16px;
     margin-right: 5px;
     cursor: default; 
+    color: #ffffff;
+    padding: 0 10px 0 10px;
 }
 .advanced:hover {
     width: 1100px;
@@ -874,7 +876,7 @@ input:focus {
     left: 30px;
     top: 200px;
     z-index: 2;
-    background-color: #E12828;
+    background-color: #b92323;
 }
 .upper-intermediate {
     position: absolute;
@@ -912,6 +914,8 @@ input:focus {
     margin-right: 5px;
     background-position: 100% 0%;
     cursor: default; 
+    color: #ffffff;
+    padding: 0 10px 0 10px;
 }
 .upper-intermediate:hover {
     width: 1100px;
@@ -919,7 +923,7 @@ input:focus {
     left: 30px;
     top: 300px;
     z-index: 2;
-    background-color: #FE7F01;
+    background-color: #e67301;
 }
 .upper-intermediate:hover .boy .toddler {
     opacity: 0;
@@ -960,14 +964,16 @@ input:focus {
     margin-top: -16px;
     margin-right: 5px;
     cursor: default; 
+    color: #ffffff;
+    padding: 0 10px 0 10px;
 }
 .intermediate:hover {
     width: 1100px;
-    height: 130px;
+    height: 135px;
     left: 30px;
     top: 400px;
     z-index: 2;
-    background-color: #FFB200;
+    background-color: rgb(226, 158, 0);
 }
 .pre-intermediate {
     position: absolute;
@@ -1004,15 +1010,16 @@ input:focus {
     margin-top: -16px;
     margin-right: 5px;
     cursor: default; 
-
+    color: #ffffff;
+    padding: 0 10px 0 10px;
 }
 .pre-intermediate:hover {
     width: 1100px;
-    height: 125px;
+    height: 140px;
     top: 500px;
     left: 30px;
     z-index: 2;
-    background-color: #FFE600;
+    background-color: #dac400;
 }
 .elementary {
     position: absolute;
@@ -1050,15 +1057,16 @@ input:focus {
     margin-top: -16px;
     margin-right: 5px;
     cursor: default; 
-
+    color: #ffffff;
+    padding: 0 10px 0 10px;
 }
 .elementary:hover {
     width: 1100px;
-    height: 120px;
+    height: 135px;
     left: 30px;
     top: 600px;
     z-index: 2;
-    background-color: #A5EF00;
+    background-color: #89c900;
 }
 .Start {
     position: absolute;
@@ -1095,11 +1103,13 @@ input:focus {
     margin-top: -16px;
     margin-right: 5px;
     cursor: default; 
+    color: #ffffff;
+    padding: 0 10px 0 10px;
 }
 .Start:hover {
     top: 700px;
-    height: 110px;
-    background-color: #48dc35;
+    height: 115px;
+    background-color: #3ebb2e;
 }
 .babyad {
     position: absolute;
