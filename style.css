@@ -973,7 +973,7 @@ input:focus {
     left: 30px;
     top: 400px;
     z-index: 2;
-    background-color: rgb(226, 158, 0);
+    background-color: #e29e00;
 }
 .pre-intermediate {
     position: absolute;
